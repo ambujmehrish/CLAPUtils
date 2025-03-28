@@ -1,0 +1,5 @@
+CLAPv2/vggsound_formatted_batch_1 parquet
+CLAPv2/audioset parquet
+CLAPv2/esc50 parquet
+CLAPv2/fma_full_16bit parquet
+CLAPv2/audioset_strong parquet
