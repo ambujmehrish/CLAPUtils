@@ -1,0 +1,262 @@
+[
+  {
+    "aug_name": "background_noise",
+    "min_snr_db": 0.0,
+    "max_snr_db": 30.0,
+    "p": 0.5,
+    "background_paths": null
+  },
+  {
+    "aug_name": "color_noise",
+    "min_snr_db": 0.0,
+    "max_snr_db": 30.0,
+    "p": 0.5
+  },
+  {
+    "aug_name": "gaussian_noise",
+    "min_amplitude": 0.001,
+    "max_amplitude": 0.015,
+    "p": 0.5
+  },
+  {
+    "aug_name": "gaussian_snr",
+    "min_snr_db": 0.0,
+    "max_snr_db": 30.0,
+    "p": 0.5
+  },
+  {
+    "aug_name": "short_noises",
+    "min_snr_db": 0.0,
+    "max_snr_db": 30.0,
+    "p": 0.5
+  },
+  {
+    "aug_name": "duration_adjust",
+    "min_duration": 0.5,
+    "max_duration": 1.5,
+    "p": 0.5
+  },
+  {
+    "aug_name": "air_absorption",
+    "p": 0.5
+  },
+  {
+    "aug_name": "aliasing",
+    "aliasing_factor": 0.2,
+    "p": 0.5
+  },
+  {
+    "aug_name": "impulse_response",
+    "ir_paths": null,
+    "p": 0.5
+  },
+  {
+    "aug_name": "band_pass_filter",
+    "min_cutoff": 300,
+    "max_cutoff": 3000,
+    "p": 0.5
+  },
+  {
+    "aug_name": "band_stop_filter",
+    "min_cutoff": 300,
+    "max_cutoff": 3000,
+    "p": 0.5
+  },
+  {
+    "aug_name": "bit_crush",
+    "bit_depth": 8,
+    "p": 0.5
+  },
+  {
+    "aug_name": "clip",
+    "clipping_threshold": 0.8,
+    "p": 0.5
+  },
+  {
+    "aug_name": "clipping_distortion",
+    "clipping_threshold": 0.8,
+    "p": 0.5
+  },
+  {
+    "aug_name": "gain",
+    "min_gain_db": -6,
+    "max_gain_db": 6,
+    "p": 0.5
+  },
+  {
+    "aug_name": "gain_transition",
+    "min_gain_db": -6,
+    "max_gain_db": 6,
+    "transition_duration": 0.5,
+    "p": 0.5
+  },
+  {
+    "aug_name": "high_pass_filter",
+    "cutoff_freq": 300,
+    "p": 0.5
+  },
+  {
+    "aug_name": "high_shelf_filter",
+    "cutoff_freq": 3000,
+    "gain_db": 3,
+    "p": 0.5
+  },
+  {
+    "aug_name": "lambda_transform",
+    "lambda_function": "lambda x: x",
+    "p": 0.5
+  },
+  {
+    "aug_name": "limiter",
+    "threshold": 0.9,
+    "p": 0.5
+  },
+  {
+    "aug_name": "loudness_norm",
+    "target_loudness_db": -23,
+    "p": 0.5
+  },
+  {
+    "aug_name": "low_pass_filter",
+    "cutoff_freq": 3000,
+    "p": 0.5
+  },
+  {
+    "aug_name": "low_shelf_filter",
+    "cutoff_freq": 300,
+    "gain_db": -3,
+    "p": 0.5
+  },
+  {
+    "aug_name": "mp3_compression",
+    "bitrate": "64k",
+    "p": 0.5
+  },
+  {
+    "aug_name": "normalize",
+    "p": 1.0
+  },
+  {
+    "aug_name": "padding",
+    "target_length": 16000,
+    "p": 0.5
+  },
+  {
+    "aug_name": "peaking_filter",
+    "center_freq": 1000,
+    "gain_db": 5,
+    "q_factor": 1.0,
+    "p": 0.5
+  },
+  {
+    "aug_name": "pitch_shift",
+    "shift_semitones": 2,
+    "p": 0.5
+  },
+  {
+    "aug_name": "polarity_invert",
+    "p": 1.0
+  },
+  {
+    "aug_name": "repeat_part",
+    "repeat_factor": 2,
+    "p": 0.5
+  },
+  {
+    "aug_name": "resample",
+    "target_sample_rate": 16000,
+    "p": 0.5
+  },
+  {
+    "aug_name": "reverse",
+    "p": 1.0
+  },
+  {
+    "aug_name": "room_simulate",
+    "room_size": 1.0,
+    "p": 0.5
+  },
+  {
+    "aug_name": "seven_band_eq",
+    "gains_db": [0, 0, 0, 0, 0, 0, 0],
+    "p": 0.5
+  },
+  {
+    "aug_name": "shift",
+    "shift_max_seconds": 0.5,
+    "p": 0.5
+  },
+  {
+    "aug_name": "tanh_distortion",
+    "distortion_level": 0.5,
+    "p": 0.5
+  },
+  {
+    "aug_name": "time_mask",
+    "time_mask_percentage": 0.3,
+    "p": 1.0
+  },
+  {
+    "aug_name": "time_stretch",
+    "rate_min": 0.8,
+    "rate_max": 1.25,
+    "p": 1.0
+  },
+  {
+    "aug_name": "trim",
+    "p": 1.0
+  },
+  {
+    "aug_name": "audio_concat_mix",
+    "speech_dir": "audio/speech",
+    "sound_effects_dir": "audio/sound_effects",
+    "music_dir": "audio/music",
+    "mix_method": "overlay",
+    "p": 0.5
+  },
+  {
+    "aug_name": "procedural_captioning",
+    "p": 1.0
+  },
+  {
+    "aug_name": "mixup",
+    "alpha": 1.0,
+    "p": 1.0
+  },
+  {
+    "aug_name": "spec_augment",
+    "freq_masking_max_percentage": 0.15,
+    "time_masking_max_percentage": 0.3,
+    "p": 1.0
+  },
+  {
+    "aug_name": "vtlp",
+    "alpha_min": 0.9,
+    "alpha_max": 1.1,
+    "p": 1.0
+  },
+  {
+    "aug_name": "echo_delay",
+    "delay_time": 0.2,
+    "decay": 0.5,
+    "p": 1.0
+  },
+  {
+    "aug_name": "dynamic_range",
+    "threshold": 0.5,
+    "ratio": 2.0,
+    "mode": "compress",
+    "p": 1.0
+  },
+  {
+    "aug_name": "spectral_inversion",
+    "method": "invert",
+    "p": 1.0
+  },
+  {
+    "aug_name": "harmonic_percussive",
+    "harmonic_gain_range": [0.8, 1.2],
+    "percussive_gain_range": [0.8, 1.2],
+    "p": 1.0
+  }
+]
